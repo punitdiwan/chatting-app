@@ -1,0 +1,95 @@
+.room {
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.room .heading {
+  font-family: 'DM Sans';
+  color: #464646;
+  font-size: 2rem;
+  font-weight: 500;
+  z-index: 1000;
+}
+
+.room .messages {
+  background: #EAEAEA;
+}
+
+.room .messages .message .msg {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.room .messages .my-message {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.room .messages .my-message .user {
+  display: none;
+}
+
+.room .messages .my-message .msg {
+  color: white;
+  background: #408EEA;
+}
+
+.room .messages > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto !important;
+  overflow: auto;
+  min-height: 400px;
+  max-height: 400px;
+  padding: 1rem;
+}
+
+.room .form {
+  position: relative;
+  z-index: 1000;
+}
+
+.room .form input {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.room .form button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+::-webkit-input-placeholder {
+  opacity: .5;
+}
+
+:-ms-input-placeholder {
+  opacity: .5;
+}
+
+::-ms-input-placeholder {
+  opacity: .5;
+}
+
+::placeholder {
+  opacity: .5;
+}
+
+@media (max-width: 30em) {
+  .room .messages {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+/*# sourceMappingURL=Chat.css.map */
